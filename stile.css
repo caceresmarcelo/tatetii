@@ -1,0 +1,64 @@
+:root{
+    --color-primario:rgb(23, 23, 41);
+    --line-style:10px solid var(--color-primario);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color:var(--color-primario);
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    user-select: none;
+    background-color: azure;
+}
+#contenedorGrilla{
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    justify-content: center;
+}
+
+.cuadrado{
+    color:var(--color-primario);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.medio{
+    border-left: var(--line-style);
+    border-right:var(--line-style)
+}
+
+.arriba{
+    border-top: var(--line-style);
+    border-block-end: var(--line-style);
+    border-top: var(--line-style);
+    border-left: var(--line-style);
+    border-right: var(--line-style)
+
+
+
+}
+
+.abajo{
+    border-block-end: var(--line-style);
+    border-top: var(--line-style);
+    border-left: var(--line-style);
+    border-right: var(--line-style)
+
+}
+
+.ganador{
+    background-color: rgb(99, 248, 25);
+}
+
+
